@@ -18,7 +18,11 @@ RUN adduser --disabled-password \
     
 COPY . ${HOME}
 USER root
+
+COPY ./entrypoint.sh /
+RUN chmod +x /entrypoint.sh
+
 RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
 
-ENTRYPOINT ["root --notebook"]
+ENTRYPOINT ["/entrypoint.sh"]
