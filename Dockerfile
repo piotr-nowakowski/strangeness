@@ -1,5 +1,6 @@
 FROM rootproject/root:6.20.08-ubuntu20.04
 
+RUN apt-get update
 RUN apt-get install -y python3-pip
 
 RUN pip install --no-cache-dir notebook==5.*
