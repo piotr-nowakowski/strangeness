@@ -1,7 +1,7 @@
 FROM rootproject/root:6.20.08-ubuntu20.04
 
 RUN apt-get update
-RUN apt-get install -y python2.7 python-pip
+RUN apt-get install -y python2.7
 RUN apt-get install -y python3-pip
 
 RUN pip3 install --no-cache-dir notebook==5.*
