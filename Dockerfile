@@ -16,9 +16,9 @@ RUN adduser --disabled-password \
     --uid ${NB_UID} \
     ${NB_USER}
     
-COPY . ${HOME}
 USER root
-
+COPY . ${HOME}
+RUN rm ${HOME}/entrypoint.sh
 COPY ./entrypoint.sh /
 RUN chmod +x /entrypoint.sh
 
