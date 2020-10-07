@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
 
-echo "$@" > /opt/log.txt
+echo "$@" > /tmp/log.txt
 
 exec "$@"
