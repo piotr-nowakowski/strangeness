@@ -5,7 +5,7 @@ RUN apt-get install -y python3-pip
 
 RUN pip3 install --no-cache-dir notebook==5.*
 
-ARG NB_USER=jupyter
+ARG NB_USER=jovyan
 ARG NB_UID=1000
 ENV USER ${NB_USER}
 ENV NB_UID ${NB_UID}
