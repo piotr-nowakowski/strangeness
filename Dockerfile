@@ -22,6 +22,7 @@ RUN adduser --disabled-password \
 USER root
 COPY . ${HOME}
 RUN rm ${HOME}/entrypoint.sh
+RUN rm ${HOME}/Dockerfile
 COPY ./entrypoint.sh /
 RUN chmod +x /entrypoint.sh
 
