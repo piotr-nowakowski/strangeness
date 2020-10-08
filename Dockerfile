@@ -1,4 +1,4 @@
-FROM rootproject/root:6.20.08-ubuntu20.04
+FROM rootproject/root:6.22.02-ubuntu20.04
 
 RUN apt-get update
 RUN apt-get install -y python2
