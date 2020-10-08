@@ -5,8 +5,8 @@ RUN apt-get install -y python2
 RUN apt-get install -y python3 python3-pip
 
 #RUN pip3 install --no-cache-dir notebook==5.*
-RUN pip3 install jupyter
-RUN pip3 install metakernel
+RUN pip3 install --no-cache-dir jupyter
+RUN pip3 install --no-cache-dir metakernel
 
 ARG NB_USER=jovyan
 ARG NB_UID=1000
